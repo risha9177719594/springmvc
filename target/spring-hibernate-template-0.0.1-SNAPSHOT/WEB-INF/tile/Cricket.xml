@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="cricketBase.definition"        template="/views/tile/HomeLay.jsp">
+            <put-attribute name="title" value="IPL Home" />
+            <put-attribute name="header" value="/views/cricket/common/header.jsp" />        
+            <put-attribute name="corousel" value="/views/cricket/common/corousel.jsp" />    
+            <put-attribute name="matchFixtures" value="/views/cricket/common/fixtures.jsp" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/cricket/common/footer.jsp" />    
+    </definition> 
+    <definition name="matchB.definition"        template="/views/cricket/tile/MatchLay.jsp">
+            <put-attribute name="title" value="IPL Home" />
+            <put-attribute name="header" value="/views/cricket/common/header.jsp" />    
+            <put-attribute name="matchFixtures" value="/views/cricket/common/fixtures.jsp" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/cricket/common/footer.jsp" />    
+    </definition>
+     <definition name="blogB.definition"        template="/views/tile/PageLay.jsp">
+            <put-attribute name="title" value="IPL Home" />
+            <put-attribute name="header" value="/views/cricket/common/header.jsp" />     
+            <put-attribute name="matchFixtures" value="/views/cricket/common/fixtures.jsp" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/cricket/common/footer.jsp" />    
+    </definition>
+    <definition name="livCom.definition"        template="/views/cricket/tile/liveComTile.jsp">
+            <put-attribute name="body" value="" /> 
+    </definition>
+    <definition name="clt20.definition"        template="/views/clt20/HomeTileLay.jsp">
+            <put-attribute name="title" value="CLT20 Home" />
+            <put-attribute name="header" value="/views/clt20/header.jsp" />        
+            <put-attribute name="corousel" value="" />    
+            <put-attribute name="matchFixtures" value="" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/clt20/footer.jsp" />    
+    </definition>
+    <definition name="home" extends="clt20.definition">
+            <put-attribute name="body" value="/views/clt20/home.jsp" />
+    </definition>   
+    <definition name="cricketHome" extends="cricketBase.definition">
+            <put-attribute name="body" value="/views/cricket/home/crickHome.jsp" />
+    </definition>
+    <definition name="teamHome" extends="matchB.definition">
+            <put-attribute name="body" value="/views/cricket/home/teamHome.jsp" />
+    </definition>
+    <definition name="teamHomeFrame" extends="livCom.definition">
+            <put-attribute name="body" value="/views/cricket/home/teamHome.jsp" />
+    </definition>
+    <definition name="match" extends="matchB.definition">
+            <put-attribute name="body" value="/views/cricket/home/matchDash.jsp" />
+    </definition>
+    <definition name="liveCom" extends="livCom.definition">
+            <put-attribute name="body" value="/views/cricket/home/liveCom.jsp" />
+    </definition>
+    <definition name="matchAdm" extends="matchB.definition">
+            <put-attribute name="body" value="/views/cricket/home/matchAdminDash.jsp" />
+    </definition>    
+    <definition name="ipl" extends="livCom.definition">
+            <put-attribute name="body" value="/views/common/footer.jsp" />
+    </definition>
+    <definition name="worldCup" extends="livCom.definition">
+            <put-attribute name="body" value="/wc/wc.jsp" />
+    </definition>
+    <definition name="wcSchedule" extends="livCom.definition">
+            <put-attribute name="body" value="/wc/wcSchedule.jsp" />
+    </definition>
+    <definition name="bloggerHome" extends="blogB.definition">
+            <put-attribute name="body" value="/views/home/blog.jsp" />
+    </definition>
+    <definition name="liveBStream" extends="matchB.definition">
+            <put-attribute name="body" value="/views/pages/live.jsp" />
+    </definition>
+    
+</tiles-definitions>

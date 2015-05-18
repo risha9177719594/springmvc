@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="clt20.definition"        template="/views/clt20/HomeTileLay.jsp">
+            <put-attribute name="title" value="CLT20 Home" />
+            <put-attribute name="header" value="/views/clt20/header.jsp" />        
+            <put-attribute name="corousel" value="" />    
+            <put-attribute name="matchFixtures" value="" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/clt20/footer.jsp" />    
+    </definition>
+    <definition name="home" extends="clt20.definition">
+            <put-attribute name="body" value="/views/clt20/home.jsp" />
+    </definition>    
+</tiles-definitions>

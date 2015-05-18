@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="crickBase.definition"        template="/views/tile/HomeLay.jsp">
+            <put-attribute name="title" value="IPL Home" />
+            <put-attribute name="header" value="/views/common/header.jsp" />        
+            <put-attribute name="corousel" value="/views/common/corousel.jsp" />    
+            <put-attribute name="matchFixtures" value="/views/common/fixtures.jsp" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/common/footer.jsp" />    
+    </definition> 
+    <definition name="iplBase.definition"        template="/views/cricket/tile/liveComTile.jsp">
+            <put-attribute name="body" value="" /> 
+    </definition>
+    <definition name="matchBase.definition"        template="/views/tile/MatchLay.jsp">
+            <put-attribute name="title" value="IPL Home" />
+            <put-attribute name="header" value="/views/common/header.jsp" />        
+            <put-attribute name="corousel" value="/views/common/corousel.jsp" />    
+            <put-attribute name="matchFixtures" value="/views/common/fixtures.jsp" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/common/footer.jsp" />    
+    </definition>
+    <definition name="blogBase.definition"        template="/views/tile/PageLay.jsp">
+            <put-attribute name="title" value="IPL Home" />
+            <put-attribute name="header" value="/views/common/header.jsp" />     
+            <put-attribute name="matchFixtures" value="/views/common/fixtures.jsp" /> 
+            <put-attribute name="body" value="" />     
+            <put-attribute name="footer" value="/views/common/footer.jsp" />    
+    </definition>
+    <definition name="crickHome" extends="iplBase.definition">
+            <put-attribute name="body" value="/views/home/crickHome.jsp" />
+    </definition>
+    <definition name="matchHome" extends="matchBase.definition">
+            <put-attribute name="body" value="/views/home/matchHome.jsp" />
+    </definition>
+     <definition name="liveStream" extends="matchBase.definition">
+            <put-attribute name="body" value="/views/pages/live.jsp" />
+    </definition>
+    <definition name="blogHome" extends="blogBase.definition">
+            <put-attribute name="body" value="/views/home/blog.jsp" />
+    </definition>
+    
+    <definition name="ipl2015" extends="iplBase.definition">
+            <put-attribute name="body" value="/views/ipl/home/crickHome.jsp" />
+    </definition>
+</tiles-definitions>

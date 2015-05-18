@@ -1,0 +1,55 @@
+#footer {
+	clear: both;
+	overflow: hidden;
+	background: #dfdfdf;
+	font-size: 12px
+}
+p.footer-link {
+	clear: both;
+	text-align: center;
+	font-size: 11px;
+	padding: 12px;
+	overflow: hidden;
+	color: #F9F9F9;
+	background: #232627;
+	line-height: 18px
+}
+#footer a {
+	color: #fff
+}
+
+.rmlink {
+	float: right !important
+}
+
+.rmlink a {
+	color: #fff !important
+}
+
+.jump-link {
+	display: none
+}
+
+.label-size {
+	margin: 6px 0
+}
+.footer-block {
+	width: 100%;
+	padding: 60px;
+	font-size: 20px;
+	line-height: 36px
+}
+.footer-block {
+	height: 180px;
+	margin-top: -90px
+}
+#networks {
+	text-align: center;
+	background: #0967c8
+}
+
+#networks i {
+	font-size: 60px;
+	color: #fff;
+	padding: 18px
+}
